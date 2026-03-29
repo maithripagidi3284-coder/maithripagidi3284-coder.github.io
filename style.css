@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+h1{
+    text-align:center;
+    color:rgb(55, 28, 231);
+    font-weight:bold;
+    font-size:48px;
+    letter-spacing:2px;
+}
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background-color:rgb(235, 107, 177);
+    color:white;
+    border-radius:5px;
+}
+.btn:hover{
+    background-color:rgb(14, 14, 14);
+}
+#photo{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+}
+.places-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+.place-card{
+    background:blanchedalmond;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgb(237, 48, 48);
+    transition:tranform 0.3s ease;
+}
+.place-card:hover{
+    transform:translateY(-8px);
+    transition:0.3s;
+    box-shadow:0 8px 20px rgba(18, 17, 18, 0.989);
+}
+.place-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+.place-content{
+    padding:15px;
+    text-align:center;
+}
+.place-content h3{
+    margin:0 0 10px;
+    font-size:18px;
+}
+.place-container button{
+    margin-top:10px;
+    padding:8px 12px;
+    border:none;
+    background:green;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+.place-content button:hover{
+    background:rgb(240, 173, 220);
+}
